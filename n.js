@@ -1,0 +1,1 @@
+import sayMorning(user)

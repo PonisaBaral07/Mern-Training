@@ -1,0 +1,54 @@
+//?arithmatic operator(+,-,*,/,**,%)
+//?assignment operator(?=,+=,-=,*=,**=,%=)
+let y=7;
+y%=2;
+console.log(y);
+
+let x=2;
+x+=1;
+console.log(x);
+
+//?comparison operator(<,>,<=,>=,!==,!=,==,===)
+// console.log("2"==2); true
+// console.log(2==2);true
+// console.log("2"===2);false
+// console.log(2===2);true
+console.log(2!=2);
+console.log("HCOE"!=="hcoe");
+console.log(2<=3);
+console.log(!true);
+
+
+
+
+
+
+
+
+//?logical operator
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

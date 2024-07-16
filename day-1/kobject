@@ -1,0 +1,78 @@
+// const countryDetail={
+//     name:"Nepal",
+//     population:"3 crore",
+//     isDeveloping:true,
+// };
+// console.log(countryDetail,typeof countryDetail);
+
+// //student 1
+// let studentName="Ponisa";
+// let studentaddress="KTM";
+// let age=22;
+
+// //student 2
+// let student2
+// {name="Ketan";
+// address="BRT";
+//  age=21;
+// };
+ 
+// // CRUD 
+// // Create/add
+// // Read/Retrieve
+// // Update/Edit
+// // Delete/Remove
+
+// let studentDetails={
+//     firstName:"Ponisa",
+//     lastname:"Baral",
+// };
+// // console.log(studentDetails);
+ 
+// // square operator
+// // console.log(`${studentDetails["firstName"]}${studentDetails["lastname"]}`);
+
+// //dot operator
+// // console.log(`${studentDetails.firstName} ${studentDetails.lastname}`);
+
+// //delete operator
+// // delete studentDetails.firstname;
+// // console.log(studentDetails);
+
+// //update operator
+// update studentDetails.firstname;
+// firstname="Sugam"
+// console.log(studentDetails);
+
+
+// let myhousedetails={
+//     numberofrooms:"2",
+//     numberofmembers:"5",
+//     colorofhouse:"red",
+//     builtyear:"2022",
+//     numberofstorey:"3",
+// };
+// // 1
+// // delete myhousedetails.numberofmembers;
+
+// // 2
+// myhousedetails.numberofrooms="3";
+
+// //3
+// myhousedetails.structureOfHouse ="pryamid";
+
+
+// //4
+// console.log(`I have a ${myhousedetails.colorofhouse} colored house with ${myhousedetails.numberofrooms} rooms where ${myhousedetails.numberofmembers} people are living. `)
+
+// let hospitalDetails={
+//         name:"Ghopa Hospital",
+//         location:"sankhamul",
+//         patientCapacity:"1500",
+//         numberOfBed:"1500",
+//         numberOfBlock:"3",
+//         numberOfDoctor:"10",
+//         numberOfNurse:"20"
+//     };
+    
+      

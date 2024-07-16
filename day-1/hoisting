@@ -1,0 +1,9 @@
+function sayHello=()=>{
+    console.log("Hello");
+
+}
+sayHello(); //mathi lekhe pani support garxa yesle
+
+
+function sayHello(){
+    console.log("Hello");

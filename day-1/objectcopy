@@ -1,0 +1,94 @@
+// const x=7;
+// const y=x;
+// console.log(y);
+
+//object copy
+//shallow copy=> ,...
+//deep copy
+
+const userDetails1 = {
+  firstName: "Ponisa",
+  lastName: "Baral",
+  address: {
+    permanent: "A",
+    temporary: "B",
+  },
+};
+// const userDetails2=userDetails1;
+// userDetails2.firstName="Sanish";
+// console.log(userDetails1);
+
+//spread operator(...)
+
+// const userDetails2={
+//     ...userDetails1,
+// };
+// userDetails2.firstName="Kalu",
+// console.log(userDetails2);
+
+//deep copy
+
+// const userDetails2 = structuredClone(userDetails1);
+// userDetails2.address.permanent = "biratnagr";
+// console.log(userDetails2);
+
+const laptopList = [
+  {
+    name: "LOQ",
+    brand: "Lenovo",
+    price: 1070,
+  },
+  {
+    name: "Aspire 5",
+    brand: "Acer",
+    price: 730,
+  },
+  {
+    name: "Modern 15",
+    brand: "MSI",
+    price: 690,
+  },
+  {
+    name: "Macbook Pro M3",
+    brand: "Apple",
+    price: 2059,
+  },
+  {
+    name: "Inspiron G15",
+    brand: "Dell",
+    price: 1015,
+  },
+  {
+    name: "Idea Pad",
+    brand: "Lenovo",
+    price: 1059,
+  },
+  {
+    name: "Zenbook 15",
+    brand: "MSI",
+    price: 1064,
+  },
+];
+
+// ? 1.give 6 percent discount on occasion of June:6 on each laptop
+//   const newList = laptopList.map((item, index, array) => {
+//     let newPrice=item.price-0.06*item.price;
+//          item.price= newPrice;
+//         return item;
+//     });
+//  console.log(newList);
+
+// ? 2.increase price of Dell laptops by 10%
+
+const newProductList = productList.map((item, index, array) => {
+  if (item.brand === "dell") {
+    const newPrice = item.price * 1.1;
+  }
+  item.price = newPrice;
+  return item;
+});
+console.log(newPrice);
+
+// ? 3.find all lenovo laptops
+
+//4 find a laptop whose name is Zenbook 15
