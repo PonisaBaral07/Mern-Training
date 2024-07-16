@@ -21,6 +21,7 @@ app.post("/movie/add", (req, res) => {
 //get all movies
 app.get("/movie/List", (req, res) => {
   console.log(req);
+  console.log("Something added");
   return res.status(200).send({ message: "success", movies: movieList });
 });
 
@@ -35,28 +36,26 @@ app.get("/movie/detail/:id", (req, res) => {
   return res.status(200).send(movie);
 });
 
-
 //updating movies
 app.put("/movie/update/:id", (req, res) => {
   const movieId = Number(req.params.id);
   const updatedMovie = req.body;
   const movieIndex = movieList.findIndex((m) => m.id === movieId);
   movieList[movieIndex] = updatedMovie;
-  return res.status(200).send({message:"Movie updated Sucessfully!"})
+  return res.status(200).send({ message: "Movie updated Sucessfully!" });
 });
 
-// delete 
-app.delete("/movie/delete/:id",(req,res)=>{
+// delete
+app.delete("/movie/delete/:id", (req, res) => {
   //finding the id
   const movieId = Number(req.params.id);
-  const movieIndex=movieList.findIndex((m)=>m.id===movieId);
-  if(movieId>movieList.length){
-    return res.status(404).send({message:"Movie not found"});
+  const movieIndex = movieList.findIndex((m) => m.id === movieId);
+  if (movieId > movieList.length) {
+    return res.status(404).send({ message: "Movie not found" });
   }
-  movieList.splice(movieIndex,1);
-  return res.status(200).send({message:"movie is deleted successfully"});
-
-})
+  movieList.splice(movieIndex, 1);
+  return res.status(200).send({ message: "movie is deleted successfully" });
+});
 
 const PORT = 3000;
 
